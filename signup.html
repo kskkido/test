@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type ="test/css" href = "./Style/signup.css">
+	<title>Signup Form</title>
+	</head>
+	<body>
+		<div id="signup">
+		<form action="" method="post" id="signupForm">
+			<div class="userInfo">
+				<h4 class="fieldTitle">User Information</h4>
+				Firstname:
+				<input type="text" name="firstname" id="firstn"><br>
+				Lastname:
+				<input type="text" name="lastname" id="lastn"><br>
+				E-mail Account:
+				<input type="email" name="emailaccount" id="email"><br>
+				Create username:
+				<input type="text" name="username" id="usern"><br>
+				Gender: Male
+				<input type="radio" name="gender" value="male" checked> | 
+				Female 
+				<input type="radio" name="gender" value="female"> |
+				Other
+				<input type="radio" name="gender" value="other"><p>
+				Additional Information: <br>
+				<textarea row="5" col="80" id="freeWrite"></textarea><br>
+				Characters left: <span id="charleft">150</span><br>
+				Last ASCII input: <span id="ascii"></span>
+			</div>
+			<hr>
+			<div class="sourceQuery">
+				<h4 class="fieldTitle">How did you find out about us?</h4>
+				<input type="checkbox" name="source" value="thirdPartyWeb" class="source"> Third Party Website<br>
+				<input type="checkbox" name="source" value="referal" class="source"> Referal from a friend or family<br>
+				<input type="checkbox" name="source" value="advertisement" class="source"> Advertisement<br>
+				<input type="checkbox" name="source" value="other" class="source"> Other<br>
+				<div id=""></div>
+			</div>
+			<br>
+			<hr>
+			<br>
+				<input type="checkbox" name="agreement" value="agreement" id="agreements">
+			<em>Check the box to agree to our terms and conditions</em><br>
+			<span id="agreementHint"></span><p>
+			<input type="submit" value="submit" id="submitForm">
+		</form>
+	</div>
+	</body>
+</html>
